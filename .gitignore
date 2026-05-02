@@ -32,3 +32,5 @@ google-services.json
 
 # Android Profiling
 *.hprof
+android-sdk/
+commandlinetools-linux-11076708_latest.zip
