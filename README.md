@@ -1,1 +1,0 @@
-# equipetd-01Prototype
