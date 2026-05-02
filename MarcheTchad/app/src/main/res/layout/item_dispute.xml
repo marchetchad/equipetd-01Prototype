@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="12dp"
+    app:cardCornerRadius="16dp"
+    app:strokeWidth="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_dispute_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LIT-XXXXXX"
+                android:textColor="@color/status_red"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_dispute_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:background="#FFE0E0"
+                android:paddingHorizontal="8dp"
+                android:text="En cours"
+                android:textColor="@color/status_red"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_dispute_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Titre du litige"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_dispute_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Description du problème..."
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_dispute_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 FCFA"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="4dp"
+                android:text="Détails"
+                android:textAllCaps="false" />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="4dp"
+                android:backgroundTint="@color/secondary_blue"
+                android:text="Répondre"
+                android:textAllCaps="false" />
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

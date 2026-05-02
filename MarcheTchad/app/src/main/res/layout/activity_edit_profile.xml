@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_beige">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@android:drawable/ic_menu_revert"
+                app:tint="@color/primary_orange" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Modifier le profil"
+                android:textColor="@color/text_dark"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="32dp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:padding="4dp"
+                android:src="@android:drawable/ic_menu_gallery"
+                app:shapeAppearanceOverlay="@style/CircleImageView"
+                app:strokeColor="@color/white"
+                app:strokeWidth="4dp" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_margin="4dp"
+                android:src="@android:drawable/ic_menu_edit"
+                app:fabCustomSize="36dp"
+                app:backgroundTint="@color/primary_orange"
+                app:tint="@color/white" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="12dp"
+            android:text="PHOTO DE PROFIL"
+            android:textColor="@color/text_grey"
+            android:textSize="12sp"
+            android:letterSpacing="0.1" />
+
+        <!-- Info Box -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            app:cardBackgroundColor="#FFF3E0"
+            app:cardCornerRadius="16dp"
+            app:strokeWidth="0dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:gravity="center_vertical">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@android:drawable/ic_dialog_info"
+                    app:tint="@color/primary_orange" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:text="Vos informations sont visibles par les acheteurs certifiés."
+                    android:textColor="#A04122"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Nom complet"
+            android:textColor="@color/text_dark"
+            android:textSize="14sp" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:boxBackgroundColor="#F5F5F5"
+            app:boxCornerRadiusBottomEnd="12dp"
+            app:boxCornerRadiusBottomStart="12dp"
+            app:boxCornerRadiusTopEnd="12dp"
+            app:boxCornerRadiusTopStart="12dp"
+            app:boxStrokeWidth="0dp"
+            app:startIconDrawable="@android:drawable/ic_menu_myplaces">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Moussa Ibrahim" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Numéro de téléphone"
+            android:textColor="@color/text_dark"
+            android:textSize="14sp" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:boxBackgroundColor="#F5F5F5"
+            app:boxCornerRadiusBottomEnd="12dp"
+            app:boxCornerRadiusBottomStart="12dp"
+            app:boxCornerRadiusTopEnd="12dp"
+            app:boxCornerRadiusTopStart="12dp"
+            app:boxStrokeWidth="0dp"
+            app:startIconDrawable="@android:drawable/stat_sys_speakerphone">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="+235 66 00 00 00" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Ville"
+            android:textColor="@color/text_dark"
+            android:textSize="14sp" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:boxBackgroundColor="#F5F5F5"
+            app:boxCornerRadiusBottomEnd="12dp"
+            app:boxCornerRadiusBottomStart="12dp"
+            app:boxCornerRadiusTopEnd="12dp"
+            app:boxCornerRadiusTopStart="12dp"
+            app:boxStrokeWidth="0dp"
+            app:startIconDrawable="@android:drawable/ic_menu_mylocation"
+            app:endIconDrawable="@android:drawable/arrow_down_float">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="N'Djamena"
+                android:focusable="false" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Type d'activité"
+            android:textColor="@color/text_dark"
+            android:textSize="14sp" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:boxBackgroundColor="#F5F5F5"
+            app:boxCornerRadiusBottomEnd="12dp"
+            app:boxCornerRadiusBottomStart="12dp"
+            app:boxCornerRadiusTopEnd="12dp"
+            app:boxCornerRadiusTopStart="12dp"
+            app:boxStrokeWidth="0dp"
+            app:startIconDrawable="@android:drawable/ic_menu_agenda"
+            app:endIconDrawable="@android:drawable/arrow_down_float">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vente au détail"
+                android:focusable="false" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:checked="true"
+            android:text="Visibilité publique"
+            android:textColor="@color/text_dark" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_save"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="40dp"
+            android:backgroundTint="@color/primary_orange"
+            android:text="Enregistrer les modifications"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            app:cornerRadius="16dp"
+            app:icon="@android:drawable/ic_menu_save"
+            app:iconGravity="textStart" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

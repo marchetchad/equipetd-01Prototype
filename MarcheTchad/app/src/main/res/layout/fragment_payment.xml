@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_beige"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <!-- Tab switcher (Mon Code / Scanner) -->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="0dp"
+        app:strokeColor="#D7CCC8"
+        app:strokeWidth="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_tab_my_code"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="Mon Code"
+                android:textColor="@color/primary_orange"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_tab_scanner"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#F5F5F5"
+                android:gravity="center"
+                android:text="Scanner"
+                android:textColor="@color/text_grey" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/tv_merchant_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Ibrahim Moussa"
+        android:textColor="@color/primary_orange"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Boutique Sahélienne • N'Djamena"
+        android:textColor="@color/text_grey" />
+
+    <!-- QR Code Container -->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:layout_marginTop="24dp"
+        app:cardCornerRadius="24dp"
+        app:strokeColor="@color/primary_orange"
+        app:strokeWidth="3dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="24dp">
+
+            <!-- Mock QR Code View -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@android:drawable/ic_dialog_info"
+                android:alpha="0.2" />
+
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_gravity="center"
+                android:src="@android:drawable/ic_menu_agenda"
+                app:tint="@color/primary_orange" />
+        </FrameLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Balance Card -->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:cardCornerRadius="20dp"
+        app:strokeWidth="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/tv_balance_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SOLDE DISPONIBLE"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_balance_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_balance_label"
+                android:layout_marginTop="8dp"
+                android:text="450.000"
+                android:textColor="@color/text_dark"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/tv_balance_value"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@id/tv_balance_value"
+                android:text="FCFA"
+                android:textColor="@color/primary_orange"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentEnd="true"
+                android:src="@android:drawable/checkbox_on_background"
+                app:tint="@color/primary_orange" />
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_weight="1"
+            android:text="Partager"
+            android:textAllCaps="false"
+            android:textColor="@color/text_dark"
+            app:icon="@android:drawable/ic_menu_share" />
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_weight="1"
+            android:text="Enregistrer"
+            android:textAllCaps="false"
+            android:textColor="@color/text_dark"
+            app:icon="@android:drawable/ic_menu_save" />
+    </LinearLayout>
+
+</LinearLayout>
